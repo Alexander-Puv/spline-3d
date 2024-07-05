@@ -14,7 +14,7 @@ export default function App() {
       />
       <Content>
         <Menu>
-          <li><img srt={Logo} alt='logo' /></li>
+          <li><img src={Logo} alt='logo' /></li>
           <li><a href="/">Home</a></li>
           <li><a href="/">Download</a></li>
           <li><a href="/">App</a></li>
@@ -105,7 +105,7 @@ const Content = styled.div`
 const Menu = styled.ul`
   display: flex;
   gap: 30px;
-  align-items: 30px;
+  align-items: center;
   margin: 0 30px 0 100px;
   padding: 0;
 
@@ -124,6 +124,10 @@ const Menu = styled.ul`
     }
     a:hover {
       border: 1px solid rgba(255, 255, 255, 0.2);
+    }
+
+    button {
+      margin: 0;
     }
   }
 `
